@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/rooms.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+     <header id="header">
+        <div class="header-top">
+            <div id="logo" class="logo">
+                <img src="../Utilities/logo-retina.png" alt="logo">
+            </div>
+
+            <div class="burger" id="burger">&#9776;</div>
+
+            <div class="links" id="nav-links">
+                <a href="./home.html">Home</a>
+                <a href="./rooms.html">Rooms</a>
+                <a href="./hotels.html">Hotels</a>
+                <a href="./bookedRooms.html">Booked Rooms</a>
+            </div>
+        </div> 
+    </header>
+
+    <button id="backToTop">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <main>
+        <section class="range-section">
+            <div>
+                <form>
+                    <label for="price">Price Per Night</label>
+                    <input type="range" id="price" min="0" max="1000" step="1" value="500">
+                    <span id="price-value">€500</span> 
+                </form>
+            </div>
+            <div>
+                <form id="type-form">
+                    <label for="room-type">Room Type</label>
+                    <div class="custom-select">
+                    <select id="room-type">
+                        <option value="">Any Room</option>
+                        <option value="Single">Single Room</option>
+                        <option value="Double">Double Room</option>
+                        <option value="Deluxe">Deluxe Room</option>
+                    </select>
+                    <i class='bx bx-chevron-down'></i>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <form id="checkin-form">
+                    <label for="check-in">Check-in</label>
+                    <div class="input-wrapper">
+                         <input type="text" id="check-in" placeholder="Check-in">
+                        <i class='bx bx-calendar'></i>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <form id="checkout-form">
+                    <label for="check-out">Check-out</label>
+                    <div class="input-wrapper">
+                         <input type="text" id="check-out" placeholder="Check-out">
+                        <i class='bx bx-calendar'></i>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <form id="guests-form">
+                    <label for="guests">Guests</label>
+                    <div class="custom-select">
+                        <select id="guests">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <i class='bx bx-user'></i>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <button type="button" id="apply-filter">Apply Filter</button>
+                <button type="button" id="reset-filter">Apply Reset</button>
+            </div>
+        </section>
+
+        <section id="card-area">
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-div">© 2025 IT Academy Step All; Rights Reserved</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="../JS/rooms.js"></script>
+</body>
+</html>
