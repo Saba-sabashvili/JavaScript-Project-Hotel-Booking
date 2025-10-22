@@ -190,6 +190,9 @@
     transform: translateY(0);
   }
 }
+* body main {
+  width: 100%;
+}
 * body main .range-section {
   max-width: 1300px;
   width: 83.4%;

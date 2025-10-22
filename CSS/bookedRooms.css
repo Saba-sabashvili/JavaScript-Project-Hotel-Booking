@@ -190,6 +190,9 @@
     transform: translateY(0);
   }
 }
+* body main {
+  width: 100%;
+}
 * body main #booked-rooms-area {
   width: 90%;
   margin: 0 auto;

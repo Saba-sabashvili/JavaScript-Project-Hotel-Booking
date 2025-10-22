@@ -190,6 +190,9 @@
     transform: translateY(0);
   }
 }
+* body main {
+  width: 100%;
+}
 * body main #hotel-area {
   width: 83.4%;
   display: flex;
