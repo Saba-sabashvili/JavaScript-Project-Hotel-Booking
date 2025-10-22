@@ -285,6 +285,9 @@
 * body .header-bottom button:hover {
   background-color: #e745c7;
 }
+* body main {
+  width: 100%;
+}
 * body main h2 {
   font-family: "Roboto";
   font-weight: 500;
