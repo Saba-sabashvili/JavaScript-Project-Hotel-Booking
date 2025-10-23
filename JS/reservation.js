@@ -188,25 +188,34 @@ function createReservationArea(room) {
     allowInput: false,
     disable: bookedDates,
     minDate: "today",
+    disableMobile: true,
+    prevArrow: "<span>&lt;</span>",
+    nextArrow: "<span>&gt;</span>",
     monthSelectorType: "static",
-    onChange(selectedDates) {
-      if (selectedDates[0]) checkOutFpRef.instance.set('minDate', selectedDates[0]);
-      else checkOutFpRef.instance.set('minDate', 'today');
-      validateForm();
-      updateTotalPrice();
-    }
+    onChange: function(selectedDates) {
+      if (selectedDates.length > 0) {
+          const nextDay = new Date(selectedDates[0]);
+          nextDay.setDate(nextDay.getDate() + 1);
+          checkOutFp.set('minDate', nextDay);
+          checkOutFp.clear();
+          checkOutFp.jumpToDate(selectedDates[0]);
+        }
+      }
   });
 
   const checkOutFp = flatpickr(checkOutInputEl, {
-    dateFormat: "Y-m-d",
-    allowInput: false,
-    disable: bookedDates,
-    minDate: "today",
-    monthSelectorType: "static",
-    onChange() {
-      validateForm();
-      updateTotalPrice();
-    }
+      dateFormat: "Y-m-d",
+      allowInput: false,
+      disable: bookedDates,
+      minDate: "today",
+      disableMobile: true,
+      prevArrow: "<span>&lt;</span>",
+      nextArrow: "<span>&gt;</span>",
+      monthSelectorType: "static",
+      onChange() {
+          validateForm();
+          updateTotalPrice();
+      }
   });
 
   checkOutFpRef.instance = checkOutFp;

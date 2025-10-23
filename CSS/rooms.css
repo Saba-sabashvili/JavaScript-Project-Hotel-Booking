@@ -456,43 +456,6 @@
   color: #5ABAC6;
   pointer-events: none;
 }
-* body main .range-section > div:nth-child(3) form .flatpickr-calendar {
-  width: 280px;
-  font-size: 0.8rem;
-  border-radius: 10px;
-  border: 1px solid #E1E1E1;
-  font-family: "Open Sans";
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-}
-* body main .range-section > div:nth-child(3) form .flatpickr-calendar .flatpickr-prev-month,
-* body main .range-section > div:nth-child(3) form .flatpickr-calendar .flatpickr-next-month {
-  color: #5ABAC6;
-  font-weight: 600;
-  font-size: 1rem;
-  cursor: pointer;
-}
-* body main .range-section > div:nth-child(3) form .flatpickr-calendar .flatpickr-day {
-  border-radius: 6px;
-  transition: background-color 0.2s ease;
-}
-* body main .range-section > div:nth-child(3) form .flatpickr-calendar .flatpickr-day.today {
-  background-color: rgb(241.6216216216, 249.4054054054, 250.3783783784);
-  color: #5ABAC6;
-  font-weight: 600;
-}
-* body main .range-section > div:nth-child(3) form .flatpickr-calendar .flatpickr-day.disabled {
-  color: #aaa;
-  background-color: #f5f5f5;
-  cursor: not-allowed;
-}
-* body main .range-section > div:nth-child(3) form .flatpickr-calendar .flatpickr-day:hover:not(.disabled) {
-  background-color: #5ABAC6;
-  color: #fff;
-}
-* body main .range-section > div:nth-child(3) form .flatpickr-calendar .flatpickr-weekdays {
-  font-weight: 600;
-  color: #5E5E5E;
-}
 * body main .range-section > div:nth-child(4) {
   width: 185px;
   height: 57px;
@@ -567,43 +530,6 @@
   font-size: 1.1rem;
   color: #5ABAC6;
   pointer-events: none;
-}
-* body main .range-section > div:nth-child(4) form .flatpickr-calendar {
-  width: 280px;
-  font-size: 0.8rem;
-  border-radius: 10px;
-  border: 1px solid #E1E1E1;
-  font-family: "Open Sans";
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-}
-* body main .range-section > div:nth-child(4) form .flatpickr-calendar .flatpickr-prev-month,
-* body main .range-section > div:nth-child(4) form .flatpickr-calendar .flatpickr-next-month {
-  color: #5ABAC6;
-  font-weight: 600;
-  font-size: 1rem;
-  cursor: pointer;
-}
-* body main .range-section > div:nth-child(4) form .flatpickr-calendar .flatpickr-day {
-  border-radius: 6px;
-  transition: background-color 0.2s ease;
-}
-* body main .range-section > div:nth-child(4) form .flatpickr-calendar .flatpickr-day.today {
-  background-color: rgb(241.6216216216, 249.4054054054, 250.3783783784);
-  color: #5ABAC6;
-  font-weight: 600;
-}
-* body main .range-section > div:nth-child(4) form .flatpickr-calendar .flatpickr-day.disabled {
-  color: #aaa;
-  background-color: #f5f5f5;
-  cursor: not-allowed;
-}
-* body main .range-section > div:nth-child(4) form .flatpickr-calendar .flatpickr-day:hover:not(.disabled) {
-  background-color: #5ABAC6;
-  color: #fff;
-}
-* body main .range-section > div:nth-child(4) form .flatpickr-calendar .flatpickr-weekdays {
-  font-weight: 600;
-  color: #5E5E5E;
 }
 * body main .range-section > div:nth-child(5) {
   width: 92px;
@@ -884,6 +810,43 @@
   * body main #card-area {
     width: 92.5%;
   }
+}
+* body .flatpickr-calendar {
+  width: 280px;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  border: 1px solid #E1E1E1;
+  font-family: "Open Sans", sans-serif;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+* body .flatpickr-calendar .flatpickr-prev-month,
+* body .flatpickr-calendar .flatpickr-next-month {
+  color: #5ABAC6;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+* body .flatpickr-calendar .flatpickr-weekdays {
+  font-weight: 600;
+  color: #5E5E5E;
+}
+* body .flatpickr-calendar .flatpickr-day {
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+* body .flatpickr-calendar .flatpickr-day.today {
+  background-color: rgb(241.6216216216, 249.4054054054, 250.3783783784);
+  color: #5ABAC6;
+  font-weight: 600;
+}
+* body .flatpickr-calendar .flatpickr-day.disabled {
+  color: #aaa;
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+* body .flatpickr-calendar .flatpickr-day:hover:not(.disabled) {
+  background-color: #5ABAC6;
+  color: #fff;
 }
 * body footer {
   width: 100%;

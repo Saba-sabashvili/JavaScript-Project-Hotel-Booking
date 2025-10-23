@@ -66,7 +66,13 @@ document.addEventListener('DOMContentLoaded', () => {
         monthSelectorType: "static",
         onChange: function(selectedDates) {
             if (selectedDates.length > 0) {
-                checkOutPicker.set('minDate', selectedDates[0]);
+                const nextDay = new Date(selectedDates[0]);
+                nextDay.setDate(nextDay.getDate() + 1);
+
+                checkOutPicker.set('minDate', nextDay);
+                checkOutPicker.clear();
+
+                checkOutPicker.jumpToDate(selectedDates[0]);
             }
         }
     });
